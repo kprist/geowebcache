@@ -254,7 +254,10 @@ public class ArcGISCacheLayer extends AbstractTileLayer {
         // bottom-right, and GWC computes tiles in bottom-left to top-right order
         final long y = (coverageMaxY - tileIndex[1]);
 
-        String level = Integer.toHexString(z);
+        // OK, so this: http://blogs.esri.com/esri/arcgis/2010/08/20/checking-your-local-cache-folders/
+        // says that "you would need to convert the values from the URL to hexadecimal format "
+        // but it seems that the level parameter has to be decimal format ???
+        String level = String.valueOf(z);
         level = zeroPadder(level, 2);
 
         String row = Long.toHexString(y);
