@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <description>
+   Bean configuration file for the gwc-filecache module
+  </description>
+
+  <bean id="gwcLayerConfigurationExtention" class="org.geowebcache.layer.gwc.GWCLayerXMLConfigurationProvider" />
+</beans>

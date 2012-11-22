@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.geowebcache</groupId>
+    <artifactId>geowebcache</artifactId>
+    <version>1.4-SNAPSHOT</version>
+  </parent>
+  <groupId>org.geowebcache</groupId>
+  <artifactId>gwc-filecache</artifactId>
+  <packaging>jar</packaging>
+  <name>Read-only file-based cache support</name>
+  <url>http://geowebcache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.geowebcache</groupId>
+      <artifactId>gwc-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>

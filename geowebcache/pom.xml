@@ -608,5 +608,6 @@
     <module>web</module>
     <module>diskquota</module>
     <module>arcgiscache</module>
+    <module>filecache</module>
   </modules>
 </project>
